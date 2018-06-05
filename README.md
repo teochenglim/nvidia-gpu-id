@@ -9,18 +9,18 @@ With any of above, you want may want my script.
 # To install
 
 ### 1. Just git clone it or download it using zip.
-'''
+```
 $ git clone https://github.com/teochenglim/nvidia-gpu-id
-'''
+```
 
 ### 2. Install it at /usr/local/bin
 
-'''
+```
 $ cd nvidia-gpu-id
 $ sudo chmod -R a+x *
 $ sudo chown -R root:root * 
 $ sudo mv * /usr/local/bin/ 
-'''
+```
 
 ### 3. run is as if like other nvidia-smi family commands
 ### I assumed /usr/local/bin is in your PATH
@@ -29,14 +29,14 @@ $ sudo mv * /usr/local/bin/
 
 ### This script also need psutil
 ### Shall work on both Python2 and Python3
-'''
+```
 $ pip install psutil
-'''
+```
 
 ### 4. run it
-'''
+```
 $ nvidia-gpu-pid
-'''
+```
 
 ### 5. Questions? Please write to teochenglim@gmail.com
 
