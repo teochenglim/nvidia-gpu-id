@@ -14,7 +14,7 @@ def get_parent_id(pid):
       return get_parent_id(me.ppid())
   except (psutil.NoSuchProcess):
     # If no such process found, maybe orphan process
-    return -1
+    return 0
 
 #me = psutil.Process(3136)
 #print(sys.argv[1])
@@ -24,4 +24,4 @@ if (ppid):
   me = psutil.Process(ppid)
   print(me.cmdline()[1])
 else:
-  print "error"
+  print "Not a docker process, please use 'ps auxf' to identify it"
