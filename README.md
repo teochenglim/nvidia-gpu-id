@@ -23,11 +23,16 @@ $ sudo mv * /usr/local/bin/
 ```
 
 ### 3. run is as if like other nvidia-smi family commands
+
 ##### I assumed /usr/local/bin is in your PATH
 ##### You can do it in by appending ~/.bashrc below
-##### export PATH=$PATH:/usr/local/bin
+```
+$ vi ~/.bashrc
+### Append this lines at the bottom of the file
+export PATH=$PATH:/usr/local/bin
+```
 
-##### This script also need psutil
+##### This script also need Python psutil
 ##### Shall work on both Python2 and Python3
 ```
 $ pip install psutil
