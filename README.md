@@ -23,12 +23,12 @@ $ sudo mv * /usr/local/bin/
 ```
 
 ### 3. run is as if like other nvidia-smi family commands
-### I assumed /usr/local/bin is in your PATH
-### You can do it in by appending ~/.bashrc below
-### export PATH=$PATH:/usr/local/bin
+##### I assumed /usr/local/bin is in your PATH
+##### You can do it in by appending ~/.bashrc below
+##### export PATH=$PATH:/usr/local/bin
 
-### This script also need psutil
-### Shall work on both Python2 and Python3
+##### This script also need psutil
+##### Shall work on both Python2 and Python3
 ```
 $ pip install psutil
 ```
@@ -40,6 +40,6 @@ $ nvidia-gpu-pid
 
 ### 5. Questions? Please write to teochenglim@gmail.com
 
-#### 5.1 Why don't you map "user id" but the "container id"?
+#### 5.1q Why don't you map "user id" but the "container id"?
 #### 5.1a Because you might not have such info for "user id" mapping, most users are granted with "docker group" permission. When user create a new container, that's no user information it in. A work around is all users shall have a form of username, or name their docker base on their user name.
 
