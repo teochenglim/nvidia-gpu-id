@@ -1,1 +1,1 @@
-nvidia-gpu-pid | grep "#" | awk -F ":" '{ print "GPU:" $1 ", process_id: " $2 ", docker_id: " $3; system("docker inspect " $3 "| egrep -i \"dgxdata|home\"") }'
+nvidia-gpu-pid | grep "#" | awk -F ":" '{ print "GPU:" $1 ", process_id: " $2 ", Memory used in (MB): " $4 ", docker_id: " $3; system("docker inspect " $3 "| egrep -i \"dgxdata|home\"") }'
