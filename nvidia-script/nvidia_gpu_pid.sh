@@ -24,7 +24,7 @@ do
   #print $gpu_id
   #print $pid_id
   container_id=`python get_parent.py $pid_id $docker_process_pid`
-  echo $gpu_id":"$pid_id":"$container_id
+  echo "#"$gpu_id":"$pid_id":"$container_id
 done
 echo "========================================================================================="
 echo "1. use 'nvidia-smi' to find which process is using which GPU"
